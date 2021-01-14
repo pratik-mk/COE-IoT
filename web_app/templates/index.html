@@ -36,11 +36,15 @@
     </div>
   </div>
 </nav>
+    <center><img src="/static/raisonilogo.png"></center>
+    <br>
     <center><h1>Center of Excellence IoT</h1></center>
+
 <center>
   <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="/static/qr_code.png" alt="Card image cap">
-  <div class="card-body">
+  <img class="card-img-top" src="{{url_for('static', filename='qrcode.png')}}" alt="Image Not Found" onerror=this.src="{{url_for('static', filename='default.png')}}">
+
+   <div class="card-body">
     <P ALIGN=LEFT>Weight: {{ w1 }}</P>
     <P ALIGN=LEFT>Date: {{ dt }}</P>
     <P ALIGN=LEFT>Time: {{ t1 }}</P>
