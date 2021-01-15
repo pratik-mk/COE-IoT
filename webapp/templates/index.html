@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>COE-IoT</title>
+  </head>
+  <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="#">COE IoT</a>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">about us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">contact us</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+    <center><img src="/static/raisonilogo.png"></center>
+    <br>
+    <center><h1>Center of Excellence IoT</h1></center>
+
+<center>
+  <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{{url_for('static', filename='qrpath')}}">   <!--  alt="Image Not Found" onerror=this.src="{{url_for('static', filename='default.png')}}"> -->
+
+   <div class="card-body">
+    <P ALIGN=LEFT>Weight: {{ w1 }}</P>
+    <P ALIGN=LEFT>Date: {{ dt }}</P>
+    <P ALIGN=LEFT>Time: {{ t1 }}</P>
+    <p class="card-text">Scan QR code for details</p>
+    <a onClick="window.location.reload();" class="btn btn-primary">Refresh</a>
+  </div>
+</div>
+</center>
+
+
+
+  </body>
+</html>
