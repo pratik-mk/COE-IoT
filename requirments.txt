@@ -1,0 +1,6 @@
+Flask==1.1.2
+SQLALchemy==1.3.22
+pyserial==3.5
+PyQRCode==1.2.1
+pypng==0.0.20
+Pillow==8.1.0
